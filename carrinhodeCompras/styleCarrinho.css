@@ -1,0 +1,152 @@
+.carCrrinho_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.carCrrinho_produtos{
+    width: 60%;
+}
+.productsLine{
+    background-color: rgba(0, 0, 0, 0.251);
+    height: 1px;
+}
+.carCrrinho_produtos span{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.quantityProduct_carPag{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.carCrrinho_resumoPedido{
+    padding: 15px;
+    width: 40%;
+    border: 2px solid rgba(0, 0, 0, 0.349);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.961);
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5rem;
+}
+.carCrrinho_resumoPedido h2{
+    font-weight: bold;
+
+}
+.carCrrinho_resumoPedido ul{
+    margin-top: 2rem;
+}
+.carCrrinho_resumoPedido ul li{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.products_list li{
+    margin-top: 1rem;
+    box-shadow: 5px 5px rgb(74, 74, 165);
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-radius: 10px;
+    background-color: rgba(114, 114, 114, 0.034);
+}
+.subTitleList_car{
+    font-size: 1.2rem;
+    color: gray;
+}
+.valueTitleList_car{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.carCrrinho_resumoPedido a, button{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(74, 74, 165);
+    color: rgb(74, 74, 165);
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+
+}.carCrrinho_resumoPedido button:first-of-type{
+    background-color: rgb(74, 74, 165);
+    color: white;
+}
+.titleBook_carPagLI{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.optionsInfos_carPagLI{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgb(74, 74, 165);
+}
+.quantityDisplay_carPagLI{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-around;
+    background-color: rgba(127, 255, 212, 0.368);
+    border-radius: 7px;
+}
+.spanFlex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.quantityDisplay_carPagLI i{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(74, 74, 165);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}.upButton_carPagLI{
+    margin-left: -1rem;
+}.downButton_carPagLI{
+    margin-right: -1rem;
+}
+.displayQuantityBook{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.trash_carPagLI{
+    font-size: 26px;
+    cursor: pointer;
+}
+.optionsInfos_carPagLI span{
+    display: flex;
+    flex-direction: column;
+}.optionsInfos_carPagLI span p{
+    font-size: 1.2rem;
+}.valueunity_carPagLI, .valuetotal_carPagLI{
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+.img_carPagLI{
+    width: 80px;
+    margin-right: 1rem;
+}.img_carPagLI img{
+    width: 100%;
+}
+#limparCarrinho{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    transition: 0.3s;
+}#limparCarrinho:hover{
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.573);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooksColection</title>
+    <link href="/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="header_content">
+            <img onclick="iconBackPage()" src="/Assets/Logo_Site.png" width="190px">
+            <span id="spanInputs_header">
+                <input class="value_search" type="text" placeholder="O que deseja?">
+                <button id="button_seach">
+                    <i class='bx bxs-search-alt-2 iconSearch'></i>
+                </button>
+            </span>
+            <span id="logCadaster_header">
+                <i class='bx bxs-user' ></i>
+                Entrar ou <br>cadastra-se
+            </span>
+            <span id="cartCount_header" onclick="mostrarcardsCar()">
+                <i class='bx bx-cart iconCarHeader' ></i>
+                <div class="circle_countCart"></div>
+            </span>
+        </div>
+    </header>
+    <ul class="navFilterBooks">
+        <li class="btnFilter" onclick="AtualizarDocumentFilter(CLASS_LITERATURAFIC, this)">Literatura e Ficção</li>
+        <li class="btnFilter" onclick="AtualizarDocumentFilter(CLASS_FANTASHORR, this)">Fantasia e Horror</li>
+        <li class="btnFilter" onclick="AtualizarDocumentFilter(CLASS_FICCAOCIENT, this)">Ficção Científica</li>
+        <li class="btnFilter" onclick="AtualizarDocumentFilter(CLASS_ROMANCEADOLEC, this)">Romance para Adolecentes</li>
+        <li class="btnFilter" onclick="AtualizarDocumentFilter(CLASS_LITERATURACLASS, this)">Literatura Classica</li>
+    </ul>
+    
+    <section class="sectionCards">
+
+            <h1><i class='bx bxs-bookmark-star' undefined ></i>Mais vendidos</h1>
+            <div class="sectionLivros">
+    
+                <button id="btn_regres" onclick="btnRegres(0)" class="btnArrow"><i class='bx bx-left-arrow-alt' ></i></button>
+                <button id="btn_progres" onclick="btnProgres(0)" class="btnArrow"><i class='bx bx-right-arrow-alt' ></i></button>
+    
+                <div id="Mais_vendidos" class="carrosel_livros">
+    
+                </div>
+            </div>
+
+            <h1><i class='bx bxs-bookmark-star' undefined ></i>Populares</h1>
+            <div class="sectionLivros">
+    
+                <button id="btn_regres" onclick="btnRegres(1)" class="btnArrow"><i class='bx bx-left-arrow-alt' ></i></button>
+                <button id="btn_progres" onclick="btnProgres(1)" class="btnArrow"><i class='bx bx-right-arrow-alt' ></i></button>
+    
+                <div id="Populares" class="carrosel_livros">
+    
+                </div>
+            </div>
+    </section>
+    <div id="cardsFilters" class="containerP">
+    </div>
+    <div class="cartBooks_container">
+        <div class="cartBooks_content">
+            
+        </div>
+    </div>
+    <script src="/dadosBooks.js"></script>
+    <script src="/indexamosters.js"></script>
+    <script src="/script.js"></script>
+    <script src="/addCarrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+
+    <link href="/style.css" rel="stylesheet">
+    <link href="/carrinhodeCompras/styleCarrinho.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="header_content">
+            <a href="/index.html"><img src="/Assets/Logo_Site.png" width="190px"></a>
+        </div>
+    </header>
+    <section>
+        <h1>Carrinho de Compras</h1>
+        <div class="carCrrinho_content">
+            <div class="carCrrinho_produtos">
+                <span>
+                    <p class="quantityProduct_carPag"></p>
+                    <p id="limparCarrinho" onclick="limparCarrinho()">Limpar Carrinho</p>
+                </span>
+                <hr class="productsLine">
+                <ul class="products_list">
+                </ul>
+            </div>
+            <div class="carCrrinho_resumoPedido">
+                <h2>Resumo do Pedido</h2>
+
+                <ul>
+                    <li>
+                        <p class="subTitleList_car">Sub-total</p>
+                        <p id="infoSubTotal" class="valueTitleList_car"></p>
+                    </li>
+                    <li>
+                        <p class="subTitleList_car">Taxa</p>
+                        <p class="valueTitleList_car">R$0.00</p>
+                    </li>
+                    <li>
+                        <p class="subTitleList_car">Valor Total</p>
+                        <p id="infoTotal" class="valueTitleList_car"></p>
+                    </li>
+                </ul>
+
+                <button>Finalizar Compra</button>
+                <a id="buttonContinuarCom" onclick="continueCompr()" href="/index.html">Continuar comprando</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="/addCarrinho.js"></script>
+    <script src="/carrinhodeCompras/carrinho.js"></script>
+</body>
+</html>
